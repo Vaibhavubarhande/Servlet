@@ -1,0 +1,53 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+ <welcome-file-list>
+   <welcome-file>Detail.jsp</welcome-file>
+ <welcome-file>sample.html</welcome-file>
+ 
+ </welcome-file-list>
+ 
+ <servlet>
+ 	<servlet-name>math</servlet-name>
+ 	<display-name>math</display-name>
+ 	<description></description>
+ 	<servlet-class>com.facebook.math</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>userdetails</servlet-name>
+ 	<display-name>userdetails</display-name>
+ 	<description></description>
+ 	<servlet-class>com.facebook.userdetails</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>Sample</servlet-name>
+ 	<display-name>Sample</display-name>
+ 	<description></description>
+ 	<servlet-class>com.facebook.Sample</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>abc</servlet-name>
+ 	<display-name>abc</display-name>
+ 	<description></description>
+ 	<servlet-class>com.facebook.abc</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>math</servlet-name>
+ 	<url-pattern>/add</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>userdetails</servlet-name>
+ 	<url-pattern>/userdetails</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>Sample</servlet-name>
+ 	<url-pattern>/sample</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>abc</servlet-name>
+ 	<url-pattern>/abc</url-pattern>
+ </servlet-mapping>
+ 
+</web-app>
